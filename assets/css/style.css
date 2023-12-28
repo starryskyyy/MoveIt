@@ -2,5 +2,11 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'Nunito', sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
 }
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+  }
