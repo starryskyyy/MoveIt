@@ -16,11 +16,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
 
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <!-- Bootstrap core CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link href="/assets/css/style.css" rel="stylesheet">
+    <script>
+        $(document).ready(function () {
+            $('#div1').hide().fadeIn('slow');
+        });
+    </script>
 
 </head>
 
@@ -68,59 +76,79 @@
             </div>
         </div>
     </nav>
-
-    <div class="px-4 py-5 text-center">
-        <h1 class="display-5 fw-bold text-body-emphasis">Move With Joy</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Welcome to our website, your gateway to exceptional moving services across Canada. As a
-                startup, we're on a mission to redefine relocation with our core beliefs in mind: stress-free
-                transitions, precise moves, and a commitment to making every step of your journey memorable. Whether
-                it's your home or office, trust us to deliver unparalleled service. Welcome to a fresh start, where
-                moving becomes an experience worth cherishing.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Get a Quote</button>
-                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Us</button>
+    <div class="text-center bg-cover parallax"
+        style="background-image: url('/assets/img/man-delivering-box.jpg'); width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover;">
+        <div class="container showcase-homepage px-5">
+            <div class="container bg-white text-center col-9 py-5 px-5" id="div1">
+                <h1 class="display-5 pt-5 fw-bold text-body-emphasis">Move With Joy</h1>
+                <p class="lead mb-4">Welcome to our website, your gateway to exceptional moving services across Canada. As a
+                    startup, we're on a mission to redefine relocation with our core beliefs in mind: stress-free transitions,
+                    precise moves, and a commitment to making every step of your journey memorable. Whether it's your home or
+                    office, trust us to deliver unparalleled service. Welcome to a fresh start, where moving becomes an
+                    experience worth cherishing.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Get a Quote</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Us</button>
+                </div>
             </div>
-            <img class="d-block mx-auto mb-4 mt-4" src="/assets/img/man-delivering-box.jpg"
-                alt="full-shot-man-delivering-box" width="735" height="382">
+            
         </div>
     </div>
 
-    <div class="container px-4 py-5" id="featured-3">
+    <div class="container px-4 " id="featured-3">
         <h2 class="text-center pb-2 border-bottom">Why Move With Us?</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <div class="feature col text-center">
                 <div
                     class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
-                        <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                        class="bi bi-briefcase" viewBox="0 0 16 16">
+                        <path
+                            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5" />
+                    </svg>
                 </div>
                 <h3 class="fs-2 text-body-emphasis">Professional</h3>
-                <p>Our team of professional movers are trained to prioritize efficiency, organization, and attention to detail. We understand that your possessions are more than just objects - they are a reflection of your life, memories, and experiences. That's why we take extra care to ensure that everything is packed and transported with the utmost care and attention.</p>
+                <p>Our team of professional movers are trained to prioritize efficiency, organization, and attention to
+                    detail. We understand that your possessions are more than just objects - they are a reflection of
+                    your life, memories, and experiences. That's why we take extra care to ensure that everything is
+                    packed and transported with the utmost care and attention.</p>
             </div>
             <div class="feature col text-center">
                 <div
                     class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-bus-front-fill" viewBox="0 0 16 16">
-                        <path d="M16 7a1 1 0 0 1-1 1v3.5c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.496 2.496 0 0 1-1-2V8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1V2.64C1 1.452 1.845.408 3.064.268A43.608 43.608 0 0 1 8 0c2.1 0 3.792.136 4.936.268C14.155.408 15 1.452 15 2.64V4a1 1 0 0 1 1 1zM3.552 3.22A43.306 43.306 0 0 1 8 3c1.837 0 3.353.107 4.448.22a.5.5 0 0 0 .104-.994A44.304 44.304 0 0 0 8 2c-1.876 0-3.426.109-4.552.226a.5.5 0 1 0 .104.994ZM8 4c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9c1.876 0 3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44.304 44.304 0 0 0 8 4m-3 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0m8 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m-7 0a1 1 0 0 0 1 1h2a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                        class="bi bi-bus-front-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 7a1 1 0 0 1-1 1v3.5c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.496 2.496 0 0 1-1-2V8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1V2.64C1 1.452 1.845.408 3.064.268A43.608 43.608 0 0 1 8 0c2.1 0 3.792.136 4.936.268C14.155.408 15 1.452 15 2.64V4a1 1 0 0 1 1 1zM3.552 3.22A43.306 43.306 0 0 1 8 3c1.837 0 3.353.107 4.448.22a.5.5 0 0 0 .104-.994A44.304 44.304 0 0 0 8 2c-1.876 0-3.426.109-4.552.226a.5.5 0 1 0 .104.994ZM8 4c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9c1.876 0 3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44.304 44.304 0 0 0 8 4m-3 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0m8 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m-7 0a1 1 0 0 0 1 1h2a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1" />
+                    </svg>
                 </div>
                 <h3 class="fs-2 text-body-emphasis">Countrywide</h3>
-                <p>Embarking on a move across Canada? Our moving company proudly extends a comprehensive range of services to meet your relocation needs from east to west. Our team can handle everything from packing and loading to unpacking, so you can focus on settling into your new home or office. And with our transparent pricing and no hidden fees, you can trust that you are getting a fair rate.</p>
+                <p>Embarking on a move across Canada? Our moving company proudly extends a comprehensive range of
+                    services to meet your relocation needs from east to west. Our team can handle everything from
+                    packing and loading to unpacking, so you can focus on settling into your new home or office. And
+                    with our transparent pricing and no hidden fees, you can trust that you are getting a fair rate.</p>
             </div>
             <div class="feature col text-center">
                 <div
                     class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-chat-square-heart" viewBox="0 0 16 16">
-                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-                        <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                        class="bi bi-chat-square-heart" viewBox="0 0 16 16">
+                        <path
+                            d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                        <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+                    </svg>
                 </div>
                 <h3 class="fs-2 text-body-emphasis">Personal Touch</h3>
-                <p>At our core, we believe that moving should be an exciting and positive experience, not a stresstul one. By providing exceptional moving services in Canada, we hope to revolutionize the way people think about moving and provide a better, more personalized experience for our customers. Contact us today to learn more about how we can help you with your next move.</p>
+                <p>At our core, we believe that moving should be an exciting and positive experience, not a stresstul
+                    one. By providing exceptional moving services in Canada, we hope to revolutionize the way people
+                    think about moving and provide a better, more personalized experience for our customers. Contact us
+                    today to learn more about how we can help you with your next move.</p>
             </div>
         </div>
+    </div>
+
+    <div class="container" id="featured-3">
+        <h2 class="text-center pb-2 border-bottom"></h2>
     </div>
 
     <!-- Bootstrap core JavaScript -->

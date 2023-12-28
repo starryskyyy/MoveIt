@@ -10,3 +10,29 @@ body{
     height: 4rem;
     border-radius: .75rem;
   }
+
+  .parallax {
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .showcase-homepage{
+    padding-top: 150px !important;
+    padding-bottom: 150px !important;
+  }
+
+  #div1 {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+#div1 .btn-primary,
+#div1 .btn-outline-secondary {
+    opacity: 1.0 !important;
+}
